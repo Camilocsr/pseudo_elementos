@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.document{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.primerafter{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px yellow;
+}
+
+.segundoafter{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px blue;   
+}
+
+.aft::after {
+    content: " rodriguez";
+    color: red;
+}
+
+.primerbefore{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px red;
+}
+
+.segundobefore{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px green;
+}
+
+.bef::before{
+    content: "camilo ";
+    color: pink;
+}
+
+.primerfirst{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px whitesmoke;
+}
+
+.segundofirst{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px violet;
+}
+
+.first::first-letter{
+    font-size: 50px;
+    color: aquamarine;
+}
+
+.primerline{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px brown;
+}
+
+.segundoline{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px azure;
+}
+
+.line::first-line{
+    color: blueviolet;
+}
+
+.primersec{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px fuchsia;
+}
+
+.segundosec{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px tomato;
+}
+
+.sec::selection{
+    background-color: purple;
+    color: blue;
+}
+
+.primerback{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px black;
+}
+
+.segundoback{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px orangered;
+}
+
+.primerplace{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px orangered;
+}
+
+.segundoplace{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px orangered;
+}
+
+.primermarker{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px gray;
+}
+
+.segundomarker{
+    width: 400px;
+    height: 300px;
+    padding: 30px;
+    margin: 10px;
+    border: solid 5px goldenrod;
+}
+
+ul li::marker{
+    color: red;
+    font-size: 1.5em;
+}
+
+input::placeholder{
+    color: blue;
+    font-size: 1.5rem;
+    font-style: italic;
+}

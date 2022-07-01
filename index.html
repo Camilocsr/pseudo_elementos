@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link bootrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>pseudo elemts</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pseudo elemts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::after</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::before</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::first-letter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::first-line</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::selection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::backdrop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::placeholder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::marker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">::spelling-error</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="document">
+    <header class="header container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-8 primerafter">
+          <h1>Pseudo elemento after</h1>
+          <p>En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada.</p>
+        </div>
+        <div class="col-8 segundoafter">
+          <h1>Ejemplo</h1>
+          <span class="aft">::after soy camilo solano</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primerbefore">
+          <h1>pseudo elemento before</h1>
+          <span>En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.</span>
+        </div>
+        <div class="col-8 segundobefore">
+          <h1>Ejemplo</h1>
+          <span class="bef">solano rodriguez</span>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primerfirst">
+          <h1>pseudo elemento first-letter</h1>
+          <p>El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas).</p>
+        </div>
+        <div class="col-8 segundofirst">
+          <h1>Ejemplo</h1>
+          <p class="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ipsa assumenda corrupti culpa neque perferendis itaque maxime mollitia inventore veritatis molestiae alias, ratione nostrum ipsum blanditiis natus officiis voluptatum quasi?</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primerline">
+          <h1>pseudo elemento first-line</h1>
+          <p>El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque. Nótese que la longitud de la primera línea depende de muchos factores, incluyendo el ancho del elemento, el ancho del documento y el tamaño de fuente del texto.</p>
+        </div>
+        <div class="col-8 segundoline">
+          <h1>Ejemplo</h1>
+          <p class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quisquam, magnam quas eveniet voluptates aliquam ex commodi earum blanditiis ea obcaecati, laudantium distinctio sapiente in error maxime, enim aperiam? Iste.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primersec">
+          <h1>pseudo elemento selection</h1>
+          <p>El selector ::selection CSS pseudo-elemento aplica reglas a una porción de un documento que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un dispositivo) del usuario.</p>
+        </div>
+        <div class="col-8 segundosec">
+          <h1>Ejemplo</h1>
+          <p class="sec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, qui. Harum quaerat neque dolor tempora corrupti voluptas debitis sint maiores illum pariatur perspiciatis, cupiditate asperiores et atque labore ex recusandae.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primerback">
+          <h1>pseudo elemento backdrop</h1>
+          <p>Cada uno de los elementos en la pila de la  capa superior posee un  ::backdrop pseudo-element. Este pseudo-elemento es una caja que se muestra inmediatamente debajo del elemento (y sobre el elemento inmediatamente inferior de la pila, si es que hay), dentro de dicha capa superior.</p>
+        </div>
+        <div class="col-8 segundoback">
+          <h1>Ejemplo</h1>
+          <p class="back">no entendi</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primerplace">
+          <h1>pseudo elemento placeholder</h1>
+          <p>El pseudo-elemento CSS  ::placeholder representa el texto provisional en un elemento input o un elemento textarea</p>
+        </div>
+        <div class="col-8 segundoplace">
+          <h1>Ejemplo</h1>
+          <input placeholder="hola mundo">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 primermarker">
+          <h1>pseudo elemento marker</h1>
+          <p>El pseudo-elemento ::marker en CSS selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número. Funciona en cualquier elemento o pseudo-elemento configurado para display: list-item, como el elemento li y summary (en-US).</p>
+        </div>
+        <div class="col-8 segundomarker">
+          <h1>Ejemplo</h1>
+          <ul>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- JavaScript boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
